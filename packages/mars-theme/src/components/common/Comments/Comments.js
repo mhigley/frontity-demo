@@ -6,7 +6,7 @@ const Comments = ({state}) => {
   const data = state.source.get(state.router.link);
   const post = state.source[data.type][data.id];
 
-  const disqusShortname = "frontity-demo";
+  const disqusShortname = "frontity-demo-6lg2vhvdb.vercel.app";
 
   return (
     <>

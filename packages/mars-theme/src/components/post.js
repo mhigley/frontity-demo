@@ -3,7 +3,6 @@ import { connect, styled } from "frontity";
 import Link from "../components/common/Link";
 import List from "./list";
 import FeaturedMedia from "./featured-media";
-// import Comments from "../components/common/Comments";
 
 const Post = ({ state, actions, libraries }) => {
   // Get information about the current URL.
@@ -60,7 +59,6 @@ const Post = ({ state, actions, libraries }) => {
        by the processors we included in the libraries.html2react.processors array. */}
       <Content>
         <Html2React html={post.content.rendered} />
-        {state.frontity.platform === "client" && data.isPost && ( <libraries.comments.Comments /> ) }
       </Content>
     </Container>
   ) : null;

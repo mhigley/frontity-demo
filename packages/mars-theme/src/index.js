@@ -1,7 +1,7 @@
 import Theme from "./components/Home/Home";
 import image from "@frontity/html2react/processors/image";
 import iframe from "@frontity/html2react/processors/iframe";
-import Comments from "./components/common/Comments";
+// import Comments from "./components/common/Comments";
 
 const marsTheme = {
   name: "@frontity/mars-theme",
@@ -54,9 +54,6 @@ const marsTheme = {
        * inside the content HTML. You can add your own processors too
        */
       processors: [image, iframe],
-    },
-    comments: {
-      Comments
     }
   },
 };
